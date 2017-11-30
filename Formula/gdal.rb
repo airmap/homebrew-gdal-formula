@@ -224,6 +224,8 @@ class Gdal < Formula
   end
 
   def install
+    Dir.chdir("gdal")
+
     if build.with? "libkml"
       resource("libkml").stage do
         # See main `libkml` formula for info on patches
