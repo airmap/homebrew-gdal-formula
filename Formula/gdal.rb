@@ -1,7 +1,7 @@
 class Gdal < Formula
   desc "Geospatial Data Abstraction Library"
   homepage "http://www.gdal.org/"
-  head "https://github.com/OSGeo/gdal.git", :branch => "tags/2.2.2"
+  url "http://download.osgeo.org/gdal/2.2.2/gdal-2.2.2.tar.gz"
 
   option "with-complete", "Use additional Homebrew libraries to provide more drivers."
   option "with-opencl", "Build with OpenCL acceleration."
@@ -224,8 +224,6 @@ class Gdal < Formula
   end
 
   def install
-    Dir.chdir("gdal")
-
     if build.with? "libkml"
       resource("libkml").stage do
         # See main `libkml` formula for info on patches
