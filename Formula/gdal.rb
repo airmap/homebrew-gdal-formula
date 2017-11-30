@@ -1,7 +1,7 @@
 class Gdal < Formula
   desc "Geospatial Data Abstraction Library"
   homepage "http://www.gdal.org/"
-  head "https://github.com/OSGeo/gdal.git", :branch "tags/2.2.2"
+  head "https://github.com/OSGeo/gdal.git", :branch => "tags/2.2.2"
 
   option "with-complete", "Use additional Homebrew libraries to provide more drivers."
   option "with-opencl", "Build with OpenCL acceleration."
