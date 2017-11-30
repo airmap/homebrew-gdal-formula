@@ -1,7 +1,7 @@
 class Gdal < Formula
   desc "Geospatial Data Abstraction Library"
   homepage "http://www.gdal.org/"
-  url "http://download.osgeo.org/gdal/2.2.2/gdal-2.2.2.tar.gz"
+  url "http://download.osgeo.org/gdal/1.11.5/gdal-1.11.5.tar.gz"
 
   option "with-complete", "Use additional Homebrew libraries to provide more drivers."
   option "with-opencl", "Build with OpenCL acceleration."
