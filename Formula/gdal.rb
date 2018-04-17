@@ -63,16 +63,16 @@ class Gdal < Formula
     depends_on "json-c"
   end
 
-  depends_on :java => ["1.7+", :optional, :build]
+  depends_on "java" => ["1.7+", :optional, :build]
 
   if build.with? "swig-java"
     depends_on "ant" => :build
     depends_on "swig" => :build
   end
 
-  depends_on :python => :optional if MacOS.version <= :snow_leopard
-  depends_on :python3 => :optional
-  depends_on :fortran => :build if build.with?("python") || build.with?("python3")
+  depends_on "python" => :optional if MacOS.version <= :snow_leopard
+  depends_on "python3" => :optional
+  depends_on "fortran" => :build if build.with?("python") || build.with?("python3")
 
   # Extra linking libraries in configure test of armadillo may throw warning
   # see: https://trac.osgeo.org/gdal/ticket/5455
