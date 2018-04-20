@@ -72,7 +72,7 @@ class Gdal < Formula
 
   depends_on "python" => :optional if MacOS.version <= :snow_leopard
   depends_on "python3" => :optional
-  depends_on "datetime-fortran" => :build if build.with?("python") || build.with?("python3")
+  depends_on "fortran" => :build if build.with?("python") || build.with?("python3")
 
   # Extra linking libraries in configure test of armadillo may throw warning
   # see: https://trac.osgeo.org/gdal/ticket/5455
